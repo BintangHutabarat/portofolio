@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Experience - Bintang Hutabarat</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="terminal-loader">
+            <div class="loader-line">
+                <span class="prompt">user@bintang:~$</span>
+                <span class="cursor">_</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terminal Window -->
+    <div class="terminal-window">
+        <!-- Title Bar -->
+        <div class="terminal-titlebar">
+            <div class="titlebar-buttons">
+                <button class="titlebar-button close"></button>
+                <button class="titlebar-button minimize"></button>
+                <button class="titlebar-button maximize"></button>
+            </div>
+            <div class="titlebar-title">user@bintang: ~/experience</div>
+            <div class="titlebar-spacer"></div>
+        </div>
+
+        <!-- Navigation (Tab Bar) -->
+        <nav class="terminal-tabs">
+            <a href="index.html" class="tab">home.sh</a>
+            <a href="experience.html" class="tab active">experience.log</a>
+            <a href="projects.html" class="tab">projects/</a>
+            <a href="contact.html" class="tab">contact.txt</a>
+        </nav>
+
+        <!-- Terminal Content -->
+        <div class="terminal-content no-scroll">
+            <main class="main-content-full">
+                <div class="full-page-section" data-aos="fade-in">
+                    <div class="prompt-block">
+                        <span class="prompt">user@bintang:~$</span>
+                        <span class="command">cat experience.log</span>
+                    </div>
+
+                    <div class="full-experience" data-aos="fade-up">
+                        <div class="exp-full-section">
+                            <h3>💼 Work Experience</h3>
+                            <div class="exp-grid-full">
+                                <div class="exp-compact">
+                                    <div class="exp-main">
+                                        <span class="exp-title">CV. Miftah Digital Solution</span>
+                                        <span class="exp-role">Web Developer</span>
+                                    </div>
+                                    <span class="exp-date">Jun 2025 – Now</span>
+                                </div>
+                                <div class="exp-compact">
+                                    <div class="exp-main">
+                                        <span class="exp-title">Kampus Gratis</span>
+                                        <span class="exp-role">Web Developer</span>
+                                    </div>
+                                    <span class="exp-date">Apr – Jul 2025</span>
+                                </div>
+                                <div class="exp-compact">
+                                    <div class="exp-main">
+                                        <span class="exp-title">Kampus Gratis</span>
+                                        <span class="exp-role">Cybersecurity</span>
+                                    </div>
+                                    <span class="exp-date">Feb – Apr 2025</span>
+                                </div>
+                                <div class="exp-compact">
+                                    <div class="exp-main">
+                                        <span class="exp-title">PT. Kensington Teknologi</span>
+                                        <span class="exp-role">Back-End Developer</span>
+                                    </div>
+                                    <span class="exp-date">Sep 2024 – Jan 2025</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="exp-full-section">
+                            <h3>🎓 Education</h3>
+                            <div class="exp-grid-full">
+                                <div class="exp-compact">
+                                    <div class="exp-main">
+                                        <span class="exp-title">Institut Teknologi Indonesia</span>
+                                        <span class="exp-role">Computer Science</span>
+                                    </div>
+                                    <span class="exp-date">2022 – 2026</span>
+                                </div>
+                                <div class="exp-compact">
+                                    <div class="exp-main">
+                                        <span class="exp-title">SMK Letris Indonesia 2</span>
+                                        <span class="exp-role">Network Engineering</span>
+                                    </div>
+                                    <span class="exp-date">2019 – 2022</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="exp-full-section">
+                            <h3>🤝 Organization</h3>
+                            <div class="exp-grid-full">
+                                <div class="exp-compact">
+                                    <div class="exp-main">
+                                        <span class="exp-title">HMIF ITI</span>
+                                        <span class="exp-role">Development & Inventory</span>
+                                    </div>
+                                    <span class="exp-date">2023 – 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prompt-block">
+                        <span class="prompt">user@bintang:~$</span>
+                        <span class="cursor blink">_</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Main JS -->
+    <script src='main.js'></script>
+</body>
+</html>

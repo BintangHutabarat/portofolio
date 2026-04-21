@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Projects - Bintang Hutabarat</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="terminal-loader">
+            <div class="loader-line">
+                <span class="prompt">user@bintang:~$</span>
+                <span class="cursor">_</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terminal Window -->
+    <div class="terminal-window">
+        <!-- Title Bar -->
+        <div class="terminal-titlebar">
+            <div class="titlebar-buttons">
+                <button class="titlebar-button close"></button>
+                <button class="titlebar-button minimize"></button>
+                <button class="titlebar-button maximize"></button>
+            </div>
+            <div class="titlebar-title">user@bintang: ~/projects</div>
+            <div class="titlebar-spacer"></div>
+        </div>
+
+        <!-- Navigation (Tab Bar) -->
+        <nav class="terminal-tabs">
+            <a href="index.html" class="tab">home.sh</a>
+            <a href="experience.html" class="tab">experience.log</a>
+            <a href="projects.html" class="tab active">projects/</a>
+            <a href="contact.html" class="tab">contact.txt</a>
+        </nav>
+
+        <!-- Terminal Content -->
+        <div class="terminal-content no-scroll">
+            <main class="main-content-full">
+                <div class="full-page-section" data-aos="fade-in">
+                    <div class="prompt-block">
+                        <span class="prompt">user@bintang:~$</span>
+                        <span class="command">ls -la ./projects/</span>
+                    </div>
+
+                    <div class="section-header" data-aos="fade-up">
+                        <h1>📁 Projects Directory</h1>
+                    </div>
+
+                    <div class="projects-grid-full">
+                        <div class="project-card" data-aos="fade-up">
+                            <div class="project-image" style="background: linear-gradient(135deg, #8137f2, #6132c9)">
+                                <img src="asset/planonva.jpg" alt="" onerror="this.parentElement.classList.add('no-image')">
+                            </div>
+                            <div class="project-header">
+                                <span class="project-icon">🤖</span>
+                                <div class="project-title-group">
+                                    <h3>planova_ai_assistant/</h3>
+                                    <span class="project-type">AI Application</span>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <p>AI-powered web application that helps you organize your life and work in a more structured, efficient, and smart way.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Laravel</span>
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Python</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <span>🔗 Demo</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <span>📦 GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="project-image" style="background: linear-gradient(135deg, #26a269, #1a7a4f)">
+                                <img src="asset/plannova.jpg" alt="" onerror="this.parentElement.classList.add('no-image')">
+                            </div>
+                            <div class="project-header">
+                                <span class="project-icon">📊</span>
+                                <div class="project-title-group">
+                                    <h3>inventory_control_system/</h3>
+                                    <span class="project-type">Web Application</span>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <p>Web application to control multiple factories from stock items, production, shipping, to sales management.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Laravel</span>
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Node.js</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <span>🔗 Demo</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <span>📦 GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="project-image" style="background: linear-gradient(135deg, #3584e4, #2664c4)">
+                                <img src="asset/plannova.jpg" alt="" onerror="this.parentElement.classList.add('no-image')">
+                            </div>
+                            <div class="project-header">
+                                <span class="project-icon">🌐</span>
+                                <div class="project-title-group">
+                                    <h3>web_platform_kampus/</h3>
+                                    <span class="project-type">Full Stack Platform</span>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <p>Modern web platform with Next.js frontend, Node.js backend, and MongoDB database with real-time features.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Next.js</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <span>🔗 Demo</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <span>📦 GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="project-image" style="background: linear-gradient(135deg, #e5a50a, #c48800)">
+                                <img src="asset/devops.jpg" alt="" onerror="this.parentElement.classList.add('no-image')">
+                            </div>
+                            <div class="project-header">
+                                <span class="project-icon">🔒</span>
+                                <div class="project-title-group">
+                                    <h3>devops_security_pipeline/</h3>
+                                    <span class="project-type">DevOps & Security</span>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <p>Infrastructure as code with AWS, CI/CD pipeline, and real-time data processing with Kafka.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">AWS</span>
+                                    <span class="tech-tag">Docker</span>
+                                    <span class="tech-tag">Kafka</span>
+                                    <span class="tech-tag">Linux</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <span>🔗 Demo</span>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <span>📦 GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prompt-block">
+                        <span class="prompt">user@bintang:~$</span>
+                        <span class="command">cat ./readme.md</span>
+                    </div>
+
+                    <div class="info-box" data-aos="fade-up">
+                        <p>
+                            <span class="info-icon">ℹ️</span>
+                            These are some of my key projects. Each project involves full-stack development, security considerations, and scalable architecture. Feel free to explore the demos or check out the source code on GitHub!
+                        </p>
+                    </div>
+
+                    <div class="prompt-block">
+                        <span class="prompt">user@bintang:~$</span>
+                        <span class="cursor blink">_</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Main JS -->
+    <script src='main.js'></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact - Bintang Hutabarat</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="terminal-loader">
+            <div class="loader-line">
+                <span class="prompt">user@bintang:~$</span>
+                <span class="cursor">_</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terminal Window -->
+    <div class="terminal-window">
+        <!-- Title Bar -->
+        <div class="terminal-titlebar">
+            <div class="titlebar-buttons">
+                <button class="titlebar-button close"></button>
+                <button class="titlebar-button minimize"></button>
+                <button class="titlebar-button maximize"></button>
+            </div>
+            <div class="titlebar-title">user@bintang: ~/contact</div>
+            <div class="titlebar-spacer"></div>
+        </div>
+
+        <!-- Navigation (Tab Bar) -->
+        <nav class="terminal-tabs">
+            <a href="index.html" class="tab">home.sh</a>
+            <a href="experience.html" class="tab">experience.log</a>
+            <a href="projects.html" class="tab">projects/</a>
+            <a href="contact.html" class="tab active">contact.txt</a>
+        </nav>
+
+        <!-- Terminal Content -->
+        <div class="terminal-content no-scroll">
+            <main class="main-content-full">
+                <div class="full-page-section" data-aos="fade-in">
+                    <div class="prompt-block">
+                        <span class="prompt">user@bintang:~$</span>
+                        <span class="command">cat contact.txt</span>
+                    </div>
+
+                    <div class="section-header" data-aos="fade-up">
+                        <h1>📧 Get In Touch</h1>
+                    </div>
+
+                    <div class="contact-container-full" data-aos="fade-up">
+                        <div class="contact-info">
+                            <div class="info-item">
+                                <span class="info-icon">👤</span>
+                                <div class="info-details">
+                                    <span class="info-label">Name</span>
+                                    <span class="info-value">Bintang Bennaya Hasiholan Hutabarat</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-icon">📍</span>
+                                <div class="info-details">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Indonesia</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-icon">💼</span>
+                                <div class="info-details">
+                                    <span class="info-label">Current Role</span>
+                                    <span class="info-value">Full Stack Web Developer @ CV. Miftah Digital Solution</span>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-icon">🎓</span>
+                                <div class="info-details">
+                                    <span class="info-label">Education</span>
+                                    <span class="info-value">B. Computer Science, Institut Teknologi Indonesia (2026)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-links" data-aos="fade-up" data-aos-delay="100">
+                            <h3>Connect With Me</h3>
+                            <a href="https://linkedin.com/in/bintang-bennaya-hasiholan-hutabarat-b6543a253" target="_blank" class="contact-link">
+                                <span class="link-icon">💼</span>
+                                <span>LinkedIn</span>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://github.com/KuyangC" target="_blank" class="contact-link">
+                                <span class="link-icon">🐙</span>
+                                <span>GitHub</span>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="mailto:your-email@example.com" class="contact-link">
+                                <span class="link-icon">📧</span>
+                                <span>Email</span>
+                                <span class="link-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="prompt-block">
+                        <span class="prompt">user@bintang:~$</span>
+                        <span class="command">cat ./status.txt</span>
+                    </div>
+
+                    <div class="status-box" data-aos="fade-up">
+                        <div class="status-item">
+                            <span class="status-label">Status:</span>
+                            <span class="status-value online">● Online</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Availability:</span>
+                            <span class="status-value">Open to opportunities</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Response Time:</span>
+                            <span class="status-value">Within 24 hours</span>
+                        </div>
+                    </div>
+
+                    <div class="prompt-block">
+                        <span class="prompt">user@bintang:~$</span>
+                        <span class="command">echo "Let's build something amazing together!"</span>
+                    </div>
+
+                    <div class="echo-output" data-aos="fade-up">
+                        <p>Let's build something amazing together! 🚀</p>
+                    </div>
+
+                    <div class="prompt-block">
+                        <span class="prompt">user@bintang:~$</span>
+                        <span class="cursor blink">_</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Main JS -->
+    <script src='main.js'></script>
+</body>
+</html>
