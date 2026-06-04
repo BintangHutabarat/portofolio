@@ -3,7 +3,7 @@ import TerminalWindow from "../components/TerminalWindow";
 import { identity } from "../data/portfolio";
 
 export const metadata: Metadata = {
-  title: "Contact — Bintang B.H. Hutabarat",
+  title: "Contact",
 };
 
 const contactLinks = [

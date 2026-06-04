@@ -4,7 +4,7 @@ import RevealOnScroll from "../components/RevealOnScroll";
 import { projects } from "../data/portfolio";
 
 export const metadata: Metadata = {
-  title: "Projects — Bintang B.H. Hutabarat",
+  title: "Projects",
 };
 
 export default function ProjectsPage() {

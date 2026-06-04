@@ -17,9 +17,17 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "0xW4rd — Portfolio",
+  title: {
+    default: "0xW4rd — Portfolio",
+    template: "%s — 0xW4rd",
+  },
   description:
-    "Cybersecurity Enthusiast & Full Stack Web Developer. Final year Computer Science student at Institut Teknologi Indonesia.",
+    "DevSecOps Engineer & Full Stack Web Developer. Final year Computer Science student at Institut Teknologi Indonesia.",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({

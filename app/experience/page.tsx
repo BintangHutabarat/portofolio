@@ -4,7 +4,7 @@ import RevealOnScroll from "../components/RevealOnScroll";
 import { experience, education, organization } from "../data/portfolio";
 
 export const metadata: Metadata = {
-  title: "Experience — Bintang B.H. Hutabarat",
+  title: "Experience",
 };
 
 export default function ExperiencePage() {

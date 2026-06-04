@@ -1,34 +1,34 @@
 export const identity = {
   name: "Bintang Bennaya Hasiholan Hutabarat",
-  shortName: "Bintang B.H. Hutabarat",
+  shortName: "Bintang Hutabarat",
   nickname: "0xW4rd",
   location: "Indonesia",
   email: "bintanghutabarat0204@gmail.com",
   github: "https://github.com/KuyangC",
   linkedin: "https://linkedin.com/in/bintang-bennaya",
   status: "Available",
-  role: "DevSecOps Engineer & Full Stack Developer",
+  role: "Software Engineer & DevSecOps",
   about:
-    "DevSecOps Engineer & Full Stack Web Developer. Final year Computer Science student at Institut Teknologi Indonesia. Started career as a Back-End Developer at PT. Kensington Teknologi (Node.js, MongoDB, Express.js), then transitioned into Cybersecurity & DevOps at Kampus Gratis (Penetration Testing, AWS, CI/CD pipelines). Currently bridging security and development to build secure, scalable, and high-performance web applications. Active in HMIF ITI and continuously expanding expertise in DevSecOps practices.",
-  avatar: "/profile_pict.jpg",
+    "Software Engineer & DevSecOps. Final-year Informatics Engineering student at Institut Teknologi Indonesia. Experienced in architecting robust full-stack applications and optimizing DevOps workflows. My journey spans from building backend APIs at PT. Kensington Teknologi to hardening infrastructure at Kampus Gratis. Currently, I am driving scalable development, secure coding, and automated CI/CD pipelines at PT. Lintas Sahabat Antar Niaga—effectively bridging the gap between high-performance software engineering and ironclad security.",
+  avatar: "/bujang.png",
 }
 
 export const skills = [
   {
     category: "Frontend",
-    items: ["React", "Next.js", "Vue.js", "TailwindCSS", "TypeScript"],
+    items: ["React", "Next.js", "Vue.js", "Intertia.js"],
   },
   {
     category: "Backend",
-    items: ["Laravel", "Node.js", "Express.js", "FastAPI", "PHP"],
+    items: ["Laravel", "Nest.js", "Express.js",],
   },
   {
     category: "Database",
-    items: ["MySQL", "MongoDB", "PostgreSQL"],
+    items: ["MySQL", "MongoDB"],
   },
   {
     category: "Cloud & DevOps",
-    items: ["AWS", "Docker", "Kubernetes", "Apache Kafka", "Nginx", "Apache"],
+    items: ["AWS", "Docker", "Kubernetes", "Apache Kafka", "Nginx", "Grafana"],
   },
   {
     category: "Security",
@@ -36,15 +36,23 @@ export const skills = [
   },
   {
     category: "Languages",
-    items: ["PHP", "JavaScript", "TypeScript", "Python", "Go", "Dart", "C++"],
+    items: ["PHP", "JavaScript", "TypeScript", "Python", "C++"],
   },
   {
     category: "Tools",
-    items: ["Git", "Postman", "Prometheus", "Grafana", "Jira", "Arduino", "Raspberry Pi"],
+    items: ["Git", "Postman", "Prometheus", "Arduino"],
   },
 ]
 
 export const experience = [
+  {
+    company: "PT. Lintas Sahabat Antar Niaga",
+    role: "Software Engineer",
+    period: "Dec 2025 – Now",
+    stack: ["Laravel", "Next.js", "Nest.js", "CI/CD", "MySQL"],
+    focus: "Developing high-performance fullstack applications with a focus on secure coding and reliable data architecture.",
+    current: true,
+  },
   {
     company: "CV. Miftah Digital Solution",
     role: "Web Developer",
@@ -55,7 +63,7 @@ export const experience = [
   },
   {
     company: "Kampus Gratis",
-    role: "Cybersecurity Engineer",
+    role: "Cybersecurity Intern",
     period: "Feb – Jul 2025",
     stack: ["Governance, Security, and Compliance", "SOC", "Grafana", "Pen-Testing"],
     focus: "Infrastructure as code & real-time data processing",
@@ -63,7 +71,7 @@ export const experience = [
   },
   {
     company: "PT. Kensington Teknologi",
-    role: "Back-End Developer",
+    role: "Back-End Developer Intern",
     period: "Sep 2024 – Jan 2025",
     stack: ["Node.js", "MongoDB", "Postman"],
     focus: "API design & backend systems",
@@ -93,6 +101,66 @@ export const organization = [
 ]
 
 export const projects = [
+  {
+    name: "Codiroom Company Profile",
+    slug: "Codiroom",
+    type: "Company Profile",
+    description:
+      "AI-powered web app that helps organize life and work in a structured, efficient, and smart way.",
+    stack: ["Next.js", "Nest.js", "MySQL"],
+    demo: null as string | null,
+    github: null as string | null,
+  },
+  {
+    name: "Mandala E-Commerce",
+    slug: "Mandala",
+    type: "Ecommerce. SCM, and POS",
+    description:
+      "AI-powered web app that helps organize life and work in a structured, efficient, and smart way.",
+    stack: ["Next.js", "Nest.js", "MySQL"],
+    demo: null as string | null,
+    github: null as string | null,
+  },
+  {
+    name: "Z4Foundation.io",
+    slug: "Z4",
+    type: "Web3 Real World Asset",
+    description:
+      "AI-powered web app that helps organize life and work in a structured, efficient, and smart way.",
+    stack: ["Next.js", "Rust (Axum)", "PostgreSQL", "Solana"],
+    demo: null as string | null,
+    github: null as string | null,
+  },
+  {
+    name: "Lentera-app",
+    slug: "Lentera",
+    type: "Learning Management System",
+    description:
+      "AI-powered web app that helps organize life and work in a structured, efficient, and smart way.",
+    stack: ["Next.js", "Nest.js", "MySQL"],
+    demo: null as string | null,
+    github: null as string | null,
+  },
+  {
+    name: "Artasaku",
+    slug: "Artasaku",
+    type: "Expense Tracker",
+    description:
+      "AI-powered web app that helps organize life and work in a structured, efficient, and smart way.",
+    stack: ["Next.js", "Nest.js", "MySQL"],
+    demo: null as string | null,
+    github: null as string | null,
+  },
+  {
+    name: "Garmen",
+    slug: "Garmen",
+    type: "Supply Chain Management",
+    description:
+      "AI-powered web app that helps organize life and work in a structured, efficient, and smart way.",
+    stack: ["Laravel", "PHP", "MySQL", "Python"],
+    demo: null as string | null,
+    github: null as string | null,
+  },
   {
     name: "Planova AI Assistant",
     slug: "planova",
