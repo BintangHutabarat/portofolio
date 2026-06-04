@@ -9,7 +9,7 @@ export default function Footer() {
           <span>$ echo "Built with Next.js & TailwindCSS"</span>
         </div>
         <div className="font-mono text-xs text-muted">
-          © 2025 Bintang B.H. Hutabarat. All rights reserved.
+          © 2026 Bintang B.H. Hutabarat. All rights reserved.
         </div>
       </div>
     </footer>

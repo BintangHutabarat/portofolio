@@ -17,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bintang B.H. Hutabarat — Portfolio",
+  title: "0xW4rd — Portfolio",
   description:
     "Cybersecurity Enthusiast & Full Stack Web Developer. Final year Computer Science student at Institut Teknologi Indonesia.",
 };

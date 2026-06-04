@@ -17,7 +17,11 @@
   --animate-blink: blink 1s step-end infinite;
   --animate-fade-in: fadeIn 0.4s ease-out forwards;
   --animate-slide-up: slideUp 0.5s ease-out forwards;
+  --animate-glow-pulse: glowPulse 2.5s ease-in-out infinite;
+  --animate-scanline: scanline 8s linear infinite;
 }
+
+/* ─── Keyframes ────────────────────────────────────────── */
 
 @keyframes blink {
   0%, 100% { opacity: 1; }
@@ -34,6 +38,23 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(0, 255, 255, 0.15), 0 0 20px rgba(0, 255, 255, 0.05); }
+  50% { box-shadow: 0 0 16px rgba(0, 255, 255, 0.35), 0 0 40px rgba(0, 255, 255, 0.1); }
+}
+
+@keyframes scanline {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100vh; }
+}
+
+@keyframes heroGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
+}
+
+/* ─── Reduced motion ───────────────────────────────────── */
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -44,28 +65,47 @@
   }
 }
 
+/* ─── Base ─────────────────────────────────────────────── */
+
 body {
   background-color: #111827;
   color: #e2e8f0;
 }
 
 /* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #111827;
-}
-::-webkit-scrollbar-thumb {
-  background: #374151;
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #4b5563;
-}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #111827; }
+::-webkit-scrollbar-thumb { background: #374151; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #4b5563; }
 
 /* Selection */
 ::selection {
   background: rgba(0, 255, 255, 0.2);
   color: #e2e8f0;
+}
+
+/* ─── Terminal window hover glow ───────────────────────── */
+
+.terminal-window {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terminal-window:hover {
+  border-color: rgba(0, 255, 255, 0.35);
+  box-shadow:
+    0 0 12px rgba(0, 255, 255, 0.08),
+    0 0 30px rgba(0, 255, 255, 0.04),
+    inset 0 0 20px rgba(0, 255, 255, 0.02);
+}
+
+/* ─── Hero radial glow background ─────────────────────── */
+
+.hero-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 40%, rgba(0, 255, 255, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 30% at 80% 60%, rgba(124, 58, 237, 0.05) 0%, transparent 60%);
+  animation: heroGlow 6s ease-in-out infinite;
 }
