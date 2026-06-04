@@ -4,8 +4,8 @@ export const identity = {
   nickname: "0xW4rd",
   location: "Indonesia",
   email: "bintanghutabarat0204@gmail.com",
-  github: "https://github.com/KuyangC",
-  linkedin: "https://linkedin.com/in/bintang-bennaya",
+  github: "https://github.com/BintangHutabarat",
+  linkedin: "https://linkedin.com/in/bintang-hutabarat-b6543a253",
   status: "Available",
   role: "Software Engineer & DevSecOps",
   about:

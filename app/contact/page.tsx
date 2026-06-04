@@ -14,12 +14,12 @@ const contactLinks = [
   },
   {
     label: "github",
-    display: "https://github.com/BintangHutabarat",
+    display: "github.com/BintangHutabarat",
     href: identity.github,
   },
   {
     label: "linkedin",
-    display: "https://www.linkedin.com/in/bintang-hutabarat-b6543a253/",
+    display: "linkedin.com/in/bintang-hutabarat",
     href: identity.linkedin,
   },
 ];
