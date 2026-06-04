@@ -58,7 +58,7 @@ export const experience = [
     role: "Web Developer",
     period: "Jun 2025 – Nov 2025",
     stack: ["Laravel", "PHP", "MySQL"],
-    focus: "Secure & scalable web applications",
+    focus: "Building robust monolith web applications, optimizing database queries, and implementing core business logic.",
     current: false,
   },
   {
@@ -66,7 +66,7 @@ export const experience = [
     role: "Cybersecurity Intern",
     period: "Feb – Jul 2025",
     stack: ["Governance, Security, and Compliance", "SOC", "Grafana", "Pen-Testing"],
-    focus: "Infrastructure as code & real-time data processing",
+    focus: "Conducting vulnerability assessments, configuring real-time security monitoring dashboards, and ensuring system compliance.",
     current: false,
   },
   {
@@ -74,7 +74,7 @@ export const experience = [
     role: "Back-End Developer Intern",
     period: "Sep 2024 – Jan 2025",
     stack: ["Node.js", "MongoDB", "Postman"],
-    focus: "API design & backend systems",
+    focus: "Designing RESTful APIs, structuring NoSQL databases, and conducting thorough API testing and documentation.",
     current: false,
   },
 ]
@@ -106,18 +106,18 @@ export const projects = [
     slug: "Codiroom",
     type: "Company Profile",
     description:
-      "AI-powered web app that helps organize life and work in a structured, efficient, and smart way.",
-    stack: ["Next.js", "Nest.js", "MySQL"],
+      "A sleek, high-performance corporate website designed with dynamic routing and server-side rendering for optimal speed and SEO.",
+    stack: ["Next.js", "NestJS", "MySQL"],
     demo: null as string | null,
     github: null as string | null,
   },
   {
     name: "Mandala E-Commerce",
     slug: "Mandala",
-    type: "Ecommerce. SCM, and POS",
+    type: "Ecommerce, SCM, and POS",
     description:
-      "AI-powered web app that helps organize life and work in a structured, efficient, and smart way.",
-    stack: ["Next.js", "Nest.js", "MySQL"],
+      "An integrated retail ecosystem combining real-time inventory tracking, point-of-sale transactions, and full supply chain management workflow.",
+    stack: ["Next.js", "NestJS", "MySQL"],
     demo: null as string | null,
     github: null as string | null,
   },
@@ -126,7 +126,7 @@ export const projects = [
     slug: "Z4",
     type: "Web3 Real World Asset",
     description:
-      "AI-powered web app that helps organize life and work in a structured, efficient, and smart way.",
+      "A decentralized Web3 platform bridging real-world assets with blockchain technology, featuring high-concurrency backend services and smart contract interaction.",
     stack: ["Next.js", "Rust (Axum)", "PostgreSQL", "Solana"],
     demo: null as string | null,
     github: null as string | null,
@@ -136,8 +136,8 @@ export const projects = [
     slug: "Lentera",
     type: "Learning Management System",
     description:
-      "AI-powered web app that helps organize life and work in a structured, efficient, and smart way.",
-    stack: ["Next.js", "Nest.js", "MySQL"],
+      "A scalable school platform designed for structured digital learning, course distribution, and robust database management for student performance analytics.",
+    stack: ["Next.js", "NestJS", "MySQL"],
     demo: null as string | null,
     github: null as string | null,
   },
@@ -146,8 +146,8 @@ export const projects = [
     slug: "Artasaku",
     type: "Expense Tracker",
     description:
-      "AI-powered web app that helps organize life and work in a structured, efficient, and smart way.",
-    stack: ["Next.js", "Nest.js", "MySQL"],
+      "A personal finance and expense management tool featuring data visualization, secure transactions ledger, and automated monthly budgeting alerts.",
+    stack: ["Next.js", "NestJS", "MySQL"],
     demo: null as string | null,
     github: null as string | null,
   },
@@ -156,7 +156,7 @@ export const projects = [
     slug: "Garmen",
     type: "Supply Chain Management",
     description:
-      "AI-powered web app that helps organize life and work in a structured, efficient, and smart way.",
+      "A streamlined SCM system for garment factories, optimizing raw material workflows, automated production logs, and smart inventory demand predictions.",
     stack: ["Laravel", "PHP", "MySQL", "Python"],
     demo: null as string | null,
     github: null as string | null,
@@ -166,7 +166,7 @@ export const projects = [
     slug: "planova",
     type: "AI Application",
     description:
-      "AI-powered web app that helps organize life and work in a structured, efficient, and smart way.",
+      "A smart productivity assistant that leverages machine learning models to help analyze, categorize, and automate daily work routines and scheduling.",
     stack: ["Laravel", "PHP", "MySQL", "Python"],
     demo: null as string | null,
     github: null as string | null,
@@ -176,7 +176,7 @@ export const projects = [
     slug: "inventory-control",
     type: "Web Application",
     description:
-      "Web app to control multiple factories — stock items, production, shipping, to sales management.",
+      "A robust multi-factory enterprise system managing complete lifecycles from raw stock, active production monitoring, to secure shipping logs and sales records.",
     stack: ["Laravel", "PHP", "MySQL", "Node.js"],
     demo: null as string | null,
     github: null as string | null,
@@ -185,7 +185,8 @@ export const projects = [
     name: "Web Platform Kampus",
     slug: "web-platform-kampus",
     type: "Full Stack Platform",
-    description: "Modern web platform with real-time features and scalable architecture.",
+    description:
+      "A modern centralized portal built with real-time notifications and secure data models to handle student management and university academic operations.",
     stack: ["Next.js", "Node.js", "MongoDB"],
     demo: null as string | null,
     github: null as string | null,
@@ -195,7 +196,7 @@ export const projects = [
     slug: "devops-pipeline",
     type: "DevOps & Security",
     description:
-      "Infrastructure as code with AWS, CI/CD pipeline, and real-time data processing using Kafka.",
+      "Automated CI/CD infrastructure with embedded security compliance, cloud containerization, and distributed real-time data streaming capabilities.",
     stack: ["AWS", "Docker", "Kafka", "Linux"],
     demo: null as string | null,
     github: null as string | null,
