@@ -42,10 +42,9 @@ export const featured: Project[] = [
 ];
 
 export const more: Project[] = [
-  { name: "HMIF-APP", tag: "Team Management System", line: "Organization platform: company profile, attendance, cash, letter and inventory records, and an event calendar.", stack: [] },
+  { name: "HMIF-APP", tag: "Team Management System", line: "Organization platform: company profile, attendance, cash, letter and inventory records, and an event calendar.", stack: [], url: "https://hmif.0xw4rd.site" },
   { name: "Lentera-app", tag: "Learning Platform", line: "School platform for digital learning, course distribution and student analytics.", stack: ["Next.js", "NestJS", "MySQL"] },
   { name: "Artasaku", tag: "Expense Tracker", line: "Personal finance tool with charts, a transaction ledger and budget alerts.", stack: ["Next.js", "NestJS", "MySQL"] },
-  { name: "Garmen", tag: "Supply Chain", line: "SCM for garment factories: raw material workflow, production logs, inventory.", stack: ["Laravel", "PHP", "MySQL", "Python"] },
   { name: "Inventory Control System", tag: "Web App", line: "Multi-factory system from raw stock to production, shipping and sales logs.", stack: ["Laravel", "PHP", "MySQL", "Node.js"] },
   { name: "DevOps Security Pipeline", tag: "DevOps, Security", line: "CI/CD with embedded security checks, containers and real-time data streaming.", stack: ["AWS", "Docker", "Kafka", "Linux"] },
 ];

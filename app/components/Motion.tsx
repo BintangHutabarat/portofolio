@@ -24,6 +24,19 @@ export default function Motion() {
       gsap.utils.toArray<HTMLElement>("[data-orbit]").forEach((el) =>
         gsap.to(el, { rotation: 360, ease: "none", scrollTrigger: { trigger: document.body, start: "top top", end: "bottom bottom", scrub: true } }),
       );
+
+      // Work track follows the page scroll: pin the section and drive the track's scrollLeft.
+      const section = document.querySelector<HTMLElement>("#work");
+      const track = section?.querySelector<HTMLElement>(".track");
+      if (section && track) {
+        track.style.scrollSnapType = "none";
+        const dist = () => Math.max(0, track.scrollWidth - track.clientWidth);
+        gsap.to(track, {
+          scrollLeft: dist,
+          ease: "none",
+          scrollTrigger: { trigger: section, start: "top top", end: () => "+=" + dist(), pin: true, scrub: true, invalidateOnRefresh: true },
+        });
+      }
     });
 
     return () => {
