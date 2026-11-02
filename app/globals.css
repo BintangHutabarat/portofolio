@@ -59,9 +59,15 @@ html.lenis, html.lenis body { height: auto; }
 .photo__img::after { content: ""; position: absolute; inset: 0; background: var(--color-violet); mix-blend-mode: soft-light; opacity: 0.35; }
 .photo__dot { position: absolute; right: 4%; bottom: 4%; width: 10%; height: 10%; border-radius: 999px; background: var(--color-violet); }
 
-.track { display: flex; gap: var(--gutter); overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); padding-inline: var(--gutter); scrollbar-width: none; }
+.track { display: flex; gap: var(--gutter); overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); overscroll-behavior-x: contain; padding-inline: var(--gutter); scrollbar-width: none; }
 .track::-webkit-scrollbar { display: none; }
 .case { flex: none; width: min(82vw, 520px); scroll-snap-align: start; }
+
+/* Mobile menu: circle reveal from the Menu button, then links rise in */
+.menu-in { animation: menu-reveal 0.6s var(--ease) both; }
+.menu-link { animation: menu-rise 0.55s var(--ease) both; }
+@keyframes menu-reveal { from { clip-path: circle(0% at calc(100% - 48px) 36px); } to { clip-path: circle(150% at calc(100% - 48px) 36px); } }
+@keyframes menu-rise { from { opacity: 0; transform: translateY(32px); } to { opacity: 1; transform: none; } }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }

@@ -10,8 +10,12 @@ export function Case({ p, i }: { p: Project; i: number }) {
           {String(i + 1).padStart(2, "0")}
         </span>
         <span className="badge relative bg-ink/70 text-white">{p.tag}</span>
+        {p.url && (
+          <span className="absolute right-4 top-4 grid size-12 place-items-center rounded-full bg-violet text-xl font-semibold text-white transition-transform duration-500 ease-[var(--ease)] group-hover:rotate-45 group-hover:scale-110" aria-hidden="true">↗</span>
+        )}
       </div>
       <h3 className="t-h3 mt-5">{p.name}</h3>
+      {p.url && <p className="mt-2 font-semibold text-violet">Visit live site ↗</p>}
       <p className="t-lead mt-2 text-fog">{p.line}</p>
       <ul className="mt-4 flex flex-wrap gap-2 text-fog">
         {p.stack.map((s) => (
@@ -21,7 +25,7 @@ export function Case({ p, i }: { p: Project; i: number }) {
     </>
   );
   return p.url ? (
-    <a href={p.url} className="case block" target="_blank" rel="noreferrer">{body}</a>
+    <a href={p.url} className="case group block" target="_blank" rel="noreferrer" aria-label={`${p.name}, opens live site in a new tab`}>{body}</a>
   ) : (
     <div className="case">{body}</div>
   );
